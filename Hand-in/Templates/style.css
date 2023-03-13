@@ -1,0 +1,36 @@
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 20px;
+  }
+
+  .navbar a {
+    color: #9F6656;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  .navbar img {
+    height: 50px;
+    margin: 5px 10px;
+  }
+
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .login-btn:hover {
+    background-color: #777;
+  }

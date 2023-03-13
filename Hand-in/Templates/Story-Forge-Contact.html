@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Orbitron">
+    <title>StoryForgeContact</title>
+    <style>
+        body {
+        background-color: blue;
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        }
+        @media (max-width: 768px) {
+        body {
+        background-color: red;
+        font-size: 20px;
+        }
+        .navbar {
+        flex-direction: column;
+        }
+        }
+        .navbar a {
+        margin: 10px 0;
+        } 
+        .video-wrapper{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: calc(100vh - 60px);
+        margin-right: 20px;
+        margin-left: 20px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('dynamic') }}">Enter Numbers</a>
+    </div>
+    <div class="video-wrapper">
+        <iframe width="560" height="315"  src="https://www.youtube.com/watch?v=RqJVa0fl01w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
