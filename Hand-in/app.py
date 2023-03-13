@@ -25,7 +25,7 @@ def layout():
 # Dynamic page that displays a number
 @app.route('/display_number/<int:number>')
 def display_number(number):
-    return render_template('dynamic.html', number=number)
+    return f"Number {number}"
 
 # Dynamic page that displays a user's profile
 @app.route('/dynamic', methods=['GET', 'POST'])
